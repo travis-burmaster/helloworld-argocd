@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: https://github.com/burmaster0/helloworld-argocd.git
     targetRevision: main
-    path: deploy
+    path: helm-chart
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
