@@ -1,0 +1,9 @@
+replicaCount: 1
+
+image:
+  repository: tburmaster/python-helloworld
+  tag: v2
+  pullPolicy: IfNotPresent
+
+service:
+  port: 5000
