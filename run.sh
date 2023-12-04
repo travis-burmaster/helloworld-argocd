@@ -1,3 +1,3 @@
-docker build -t myapp .
+docker build -t python-helloworld .
 
-docker run -p 5000:5000 myapp
+docker run -p 81:5000 python-helloworld
