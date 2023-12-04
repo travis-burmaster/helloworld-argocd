@@ -7,3 +7,5 @@ image:
 
 service:
   port: 5000
+
+name: python-app

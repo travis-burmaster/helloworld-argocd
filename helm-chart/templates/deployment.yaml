@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "python-app-chart.name" . }}
+  name: {{ .Values.name }}
   labels:
-    app: {{ include "python-app-chart.name" . }}
+    app: {{ .Values.name }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ include "python-app-chart.name" . }}
+      app: {{ .Values.name }}
   template:
     metadata:
       labels:
-        app: {{ include "python-app-chart.name" . }}
+        app: {{ .Values.name }}
     spec:
       containers:
-        - name: {{ .Chart.Name }}
+        - name: {{ .Values.name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: {{ .Values.service.port }}
