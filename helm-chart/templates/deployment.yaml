@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "python-app-chart.fullname" . }}
+  name: {{ include "python-app-chart.name" . }}
   labels:
     app: {{ include "python-app-chart.name" . }}
 spec:
