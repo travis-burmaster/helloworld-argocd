@@ -4,7 +4,7 @@ metadata:
   name: test-application
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: myalias=registry-1.docker.com/tburmaster/python-helloworld:v2
+    argocd-image-updater.argoproj.io/image-list: myalias=registry.hub.docker.com/tburmaster/python-helloworld:v2
     argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/git-creds
     argocd-image-updater.argoproj.io/git-branch: main
     argocd-image-updater.argoproj.io/myalias.force-update: "true"
