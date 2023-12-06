@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_burmaster0_helloworld_argocd_1701879139793-push-trigger-input-set
+  identifier: Build_burmaster0_helloworld_argocd_1701879139793pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_burmaster0_helloworld_argocd_1701879139793
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
