@@ -11,7 +11,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/burmaster0/helloworld-argocd.git
+    repoURL: https://github.com/travis-burmaster/helloworld-argocd.git
     targetRevision: main
     path: helm-chart
   destination:
